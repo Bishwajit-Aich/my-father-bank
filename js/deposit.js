@@ -4,7 +4,13 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
     const depositField = document.getElementById('deposit-field');
     const newDepositAmountString = depositField.value;
     const newDepositAmount = parseFloat(newDepositAmountString);
-    console.log(typeof newDepositAmount);
+    depositField.value = '';
+
+    if(isNaN(newDepositAmount)){
+        alert('Please Provide A Valid Number!!');
+        return;
+    }
+    
 
     const depositTotalAmount = document.getElementById('deposit-total');
     const previousDepositTotalString = depositTotalAmount.innerText;
