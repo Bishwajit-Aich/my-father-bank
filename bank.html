@@ -12,7 +12,8 @@
         <h1 class="text-5xl text-center mt-5">Let's Get Some <span class="font-semibold text-red-800">Mooooooooooneeeeeyyyyyyyyyy</span>
         </h1>
        </header>
-       <main class="mt-12">
+       <main>
+       <section  class="mt-12">
         <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
             <div class="bg-green-400 p-6  rounded-xl">
                 <h4 class="text-3xl font-semibold text-white">Deposit</h4>
@@ -27,7 +28,31 @@
                 <h2 class="text-5xl text-white">$1240</h2>
             </div>
             
-        </div>
+    </div>
+       </section>
+
+       <!-- Deposit And Withdraw -->
+
+       <section class="mt-12">
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+            <div class="bg-violet-600 p-6  rounded-xl">
+                <h4 class="text-3xl font-semibold text-white mb-4"> Please Deposit</h4>
+              
+                    <input class="w-9/12 mb-2 block p-3" id="deposit-field" type="email" placeholder="$ Amount you want to deposit">
+      
+                    <button id="btn-deposit" class="bg-green-300 font-semibold  hover:bg-violet-600 mt-3 p-2 rounded-lg">Deposit</button>
+                
+            </div>
+            <div class="bg-sky-500 p-6  rounded-xl" >
+                <h4 class="text-3xl font-semibold text-white mb-4">Please Withdraw</h4>
+                <input class="w-9/12 mb-2 block p-3" id="user-email" type="email" placeholder="$ Amount you want to Withdraw">
+      
+                    <button id="btn-withdraw" class="bg-green-300 font-semibold  hover:bg-violet-600 mt-3 p-2 rounded-lg">Withdraw</button>
+            </div>
+          
+            
+    </div>
+       </section>
        </main>
     
 </body>
